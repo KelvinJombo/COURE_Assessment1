@@ -6,7 +6,7 @@
         {
 
              
-            var arrayCheck = IntegerEvaluator(new int[] { 1, 2, 3, 4, 5});
+            var arrayCheck = IntegerEvaluator(new int[] { 8, 8});
 
             Console.WriteLine($"Array OutPut: { arrayCheck}");
         }
@@ -16,6 +16,9 @@
         internal static int IntegerEvaluator(int[] nums)
         { 
             var total = 0;
+
+            if (nums == null || nums.Length == 0)
+                return 0;
 
 
             foreach (int num in nums)
